@@ -13,23 +13,42 @@ Project consists of vulnerability scanning and vulnerability remediation. These 
 <h2>Languages and Utilities Used</h2>
 
 - <b>Server Manager</b> 
+- <b>Domain Controller</b> 
 
 <h2>Environments Used </h2>
 
 - <b>Windows Server 2022</b>
+- <b>Windows 10</b>
 
 <h2>Project walk-through:</h2>
 
 <p align="center">
 Launch Nessus and Select New Scan <br/>
-<img src="https://imgur.com/lyJTxJW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/rmDERnc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select Basic Network Scan  <br/>
-<img src="https://imgur.com/H4lvoAJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Lj00R2M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-
+Select Basic Network Scan  <br/>
+<img src="https://imgur.com/y19kuL8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+ Select Basic Network Scan  <br/>
+<img src="https://imgur.com/zQBzxAf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select Basic Network Scan  <br/>
+<img src="https://imgur.com/wHdoRwJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select Basic Network Scan  <br/>
+<img src="https://imgur.com/yRh8mEy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+ 
+ 
 </p>
 
 <!--
