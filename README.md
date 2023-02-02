@@ -14,7 +14,6 @@ Project consists of vulnerability scanning and vulnerability remediation. These 
 <h2>Languages and Utilities Used</h2>
 
 - <b>Server Manager</b> 
-- <b></b>
 
 <h2>Environments Used </h2>
 
