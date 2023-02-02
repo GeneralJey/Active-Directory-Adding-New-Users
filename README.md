@@ -23,11 +23,14 @@ Project consists of vulnerability scanning and vulnerability remediation. These 
 <h2>Project walk-through:</h2>
 
 <p align="center">
-Launch Nessus and Select New Scan <br/>
+Launch Server Manager<br />
+Click on Tools > Active Directory Users and Computers <br/>
+<br />
 <img src="https://imgur.com/rmDERnc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select Basic Network Scan  <br/>
+Once the new window is displayed, expand the domain controller, in this case, HQ-JobSkill.org, select and right-click the Users folder to access the user options; once the options are displayed, select New > User.  <br/>
+<br/>
 <img src="https://imgur.com/Lj00R2M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
