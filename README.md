@@ -6,7 +6,7 @@
 
 
 <h2>Description</h2>
-Project consists of vulnerability scanning and vulnerability remediation. These are two of the main steps in the Vulnerability Management Lifecycle. I will be using Nessus Essentials to scan local VMs hosted on VMWare Workstation in order to run credentialed scans to discover vulnerabilities, remediate some of the vulnerabilities, then perform a rescan to verify remediation.
+Project involves creating and managing a domain controller, using PowerShell to automate user provisioning, maintenance, and de-provisioning. In addition, I set up remote access server (RAS) features to support NAT/PAT, implement and maintain Windows DNS and DHCP services, and configure Windows File Servers with the implementation of quotas and NTFS permissions.
 <br />
 
 
