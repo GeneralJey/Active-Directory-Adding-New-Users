@@ -35,19 +35,19 @@ Once the new window is displayed, expand the domain controller, in this case, HQ
 <img src="https://imgur.com/Lj00R2M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select Basic Network Scan  <br/>
+In Progress...  <br/>
 <img src="https://imgur.com/y19kuL8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
- Select Basic Network Scan  <br/>
+In Progress... <br/>
 <img src="https://imgur.com/zQBzxAf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select Basic Network Scan  <br/>
+In Progress...  <br/>
 <img src="https://imgur.com/wHdoRwJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select Basic Network Scan  <br/>
+In Progress...  <br/>
 <img src="https://imgur.com/yRh8mEy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
