@@ -1,127 +1,73 @@
 # Windows Server 2022 — Active Directory Infrastructure & Identity Management Lab
 
-**Windows Server 2022 | Active Directory Domain Services | DNS | DHCP | PowerShell | File Services | NAT/PAT | Windows 10**
-
-**Lab status:** Completed / Decommissioned  
+**Focus:** Identity administration and supporting Windows infrastructure  
+**Tools:** Windows Server 2022, Active Directory DS, PowerShell, DNS, DHCP, File Services, Remote Access / Routing, Windows 10  
+**Status:** Completed; lab decommissioned  
 **Lab domain:** `HQ-JobSkill.org`
 
-## Overview
+## Objective
 
-This completed home lab explored Windows Server infrastructure administration and identity management. I configured an Active Directory domain controller, created and managed users, practiced PowerShell-based account provisioning and maintenance, and configured supporting DNS, DHCP, file services, NTFS permissions, storage quotas, and remote access routing/NAT features. Windows 10 served as the client operating system.
+Practice Active Directory user administration and PowerShell-based account provisioning in a Windows Server lab, alongside supporting domain services and file access configuration.
 
-The original lab has since been decommissioned. Six screenshots from the original user-provisioning walkthrough were retained; additional visuals below are **recreated demonstrations, not original screenshots or independent proof of historical configuration**.
+## Environment
 
-## Architecture
-
-![Recreated lab demonstration — lab architecture](01-lab-architecture.png)
-
-*Recreated Lab Demonstration — Not Original Evidence. Diagram values and topology details are illustrative unless otherwise supported by the retained screenshots.*
-
-## Technologies and Scope
-
-| Component | Lab activity |
+| Component | Details |
 | --- | --- |
-| Windows Server 2022 | Domain controller and infrastructure services |
-| Active Directory DS | User, group, and domain administration |
-| PowerShell | User provisioning, maintenance, and deprovisioning exercises |
-| DNS | Windows DNS service configuration |
-| DHCP | Address assignment and scope administration |
-| Windows File Services | Shares, quotas, and NTFS access permissions |
-| Remote Access / Routing | NAT/PAT configuration |
-| Windows 10 | Client operating system and domain administration |
+| Server | Windows Server 2022 domain controller |
+| Directory | Active Directory Domain Services; `HQ-JobSkill.org` |
+| Client | Windows 10 |
+| Identity administration | Active Directory Users and Computers and PowerShell |
+| Supporting services | DNS, DHCP, file shares, NTFS permissions, quotas, and NAT/PAT |
+| Status | Original lab decommissioned |
 
-## Original Lab Evidence: Creating Active Directory Users
+## Implementation
 
-The following **six images were retained from the original lab**. They document the Active Directory Users and Computers workflow. They should not be interpreted as evidence for every additional service described in this README.
+- Created and managed domain user accounts through Active Directory Users and Computers.
+- Practiced PowerShell-based account provisioning, maintenance, and deprovisioning.
+- Configured and explored DNS and DHCP services.
+- Worked with file shares, NTFS permissions, and storage quotas.
+- Configured Remote Access routing and NAT/PAT features.
+- Used a Windows 10 client for domain administration exercises.
 
-### 1. Open Active Directory Users and Computers
+The original lab is no longer running. The README describes the documented lab scope; retained original screenshots focus on the user-creation workflow.
 
-In Windows Server Manager, open **Tools → Active Directory Users and Computers**.
+## Evidence
 
-![Original lab screenshot — Server Manager and Active Directory Users and Computers](https://imgur.com/rmDERnc.png)
+### Original screenshots
 
-### 2. Navigate to the Domain
+Six retained screenshots from the original lab document the Active Directory user-creation workflow:
 
-Expand `HQ-JobSkill.org` and navigate to the container or organizational unit where the user account will be created.
+1. [Open Active Directory Users and Computers](https://imgur.com/rmDERnc.png)
+2. [Navigate the domain](https://imgur.com/Lj00R2M.png)
+3. [Start the New User wizard](https://imgur.com/y19kuL8.png)
+4. [Enter user information](https://imgur.com/zQBzxAf.png)
+5. [Configure account options](https://imgur.com/wHdoRwJ.png)
+6. [Complete user provisioning](https://imgur.com/yRh8mEy.png)
 
-![Original lab screenshot — Active Directory navigation](https://imgur.com/Lj00R2M.png)
+### Recreated illustrations
 
-### 3. Start the New User Wizard
+These repository images were reconstructed after the original lab was decommissioned. They are educational illustrations, not original screenshots or independent proof of historical configuration:
 
-Select **New → User** from the appropriate location in Active Directory Users and Computers.
+- [Lab architecture](01-lab-architecture.png) — illustrative topology.
+- [Active Directory users](02-active-directory-users.png) — users, groups, and organizational units.
+- [PowerShell provisioning](03-powershell-provisioning.png) — conceptual account management example; visible commands should be independently tested.
+- [DNS Manager](04-dns-manager.png) — DNS administration illustration.
+- [DHCP Manager](05-dhcp-manager.png) — scopes and address allocation illustration.
+- [NTFS permissions](06-ntfs-permissions.png) — shared-folder access illustration.
+- [Windows domain join](08-windows-domain-join.png) — client domain administration illustration.
 
-![Original lab screenshot — new user workflow step 1](https://imgur.com/y19kuL8.png)
+The repository notes that a separate recreated NAT/PAT illustration has not been added. The retained originals should not be interpreted as evidence for every additional service described in the project.
 
-### 4. Enter User Information
+## Lessons Learned
 
-Complete the account details and logon name according to the lab's naming convention.
+- Account lifecycle work includes provisioning, maintenance, and deprovisioning.
+- Group-based permissions and appropriate NTFS access controls support least privilege.
+- DNS and DHCP are core services for domain-connected clients.
+- Configuration changes should be tested and access should be verified.
+- Evidence provenance matters: recreated visuals communicate concepts but do not prove the original lab state.
 
-![Original lab screenshot — new user workflow step 2](https://imgur.com/zQBzxAf.png)
+## Next Steps
 
-### 5. Configure Account Options
-
-Set the initial password and applicable account options in the user creation wizard.
-
-![Original lab screenshot — new user workflow step 3](https://imgur.com/wHdoRwJ.png)
-
-### 6. Complete User Provisioning
-
-Finish the wizard and review the newly created user in Active Directory Users and Computers.
-
-![Original lab screenshot — new user workflow step 4](https://imgur.com/yRh8mEy.png)
-
-## Recreated Lab Demonstrations
-
-> **Disclosure:** The following interface illustrations were reconstructed after the lab was decommissioned. They are educational visualizations of the types of administrative tasks performed, **not screenshots captured from the original environment**. Usernames, addresses, scripts, and other example values shown in the recreations may differ from the original lab.
-
-### Active Directory Users and Computers
-
-Illustrates users, groups, and organizational units in a Windows domain.
-
-![Recreated lab demonstration — active directory users](02-active-directory-users.png)
-
-### PowerShell User Provisioning
-
-Illustrates PowerShell-based user creation and account management. Any command text visible in the illustration is conceptual; it should be independently tested before use.
-
-![Recreated lab demonstration — powershell provisioning](03-powershell-provisioning.png)
-
-### DNS Administration
-
-Illustrates DNS Manager and domain-related records.
-
-![Recreated lab demonstration — dns manager](04-dns-manager.png)
-
-### DHCP Administration
-
-Illustrates DHCP scopes and address allocation settings.
-
-![Recreated lab demonstration — dhcp manager](05-dhcp-manager.png)
-
-### File Server and NTFS Permissions
-
-Illustrates shared-folder administration and security group permissions.
-
-![Recreated lab demonstration — ntfs permissions](06-ntfs-permissions.png)
-
-### NAT/PAT and Routing
-
-The original lab included Remote Access routing and NAT/PAT configuration. A separate reconstructed NAT illustration has not yet been added to this repository.
-
-### Windows 10 Domain Administration
-
-Illustrates a Windows 10 client's domain membership and related administration.
-
-![Recreated lab demonstration — windows domain join](08-windows-domain-join.png)
-
-## Security and Administration Concepts
-
-- **Identity lifecycle:** Provision, maintain, and deprovision accounts using directory administration and scripting.
-- **Least privilege:** Use group-based permissions and appropriate NTFS access controls for file resources.
-- **Core network services:** Understand how DNS and DHCP support domain-connected clients.
-- **Network access:** Configure routing and address translation in a lab environment.
-- **Operational discipline:** Test changes, document configuration, and verify access before production deployment.
-
-## Project Outcome
-
-Completed a Windows Server 2022 lab focused on Active Directory identity administration and supporting infrastructure services. The environment was later decommissioned, so the original user-creation screenshots remain the primary retained visual evidence. The additional illustrations are clearly identified as recreations for educational and portfolio presentation purposes.
+- Add a sanitized, runnable PowerShell example with prerequisites and validation steps if the script can be recovered or recreated and tested.
+- Add original or clearly labeled recreated evidence for the supporting DNS, DHCP, file-services, and NAT/PAT activities.
+- Add a separate NAT/PAT illustration if that part of the lab remains in scope.
